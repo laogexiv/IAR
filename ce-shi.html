@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>获取服务器在线玩家</title>
+</head>
+<body>
+    <h1>当前在线玩家列表</h1>
+
+    <ul id="player-list"></ul>
+
+    <script>
+        const serverIP = "your_server_ip_here";
+
+        function getOnlinePlayers(serverIP) {
+            fetch(`https://api.mojang.com/user/profiles?server=${serverIP}`)
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('Failed to fetch online players');
+                    }
+                })
+                .then(players => {
+                    const playerList = players.map(player => player.name);
+                    const playerListElement = document.getElementById("player-list");
+                    playerList.forEach(player => {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = player;
+                        playerListElement.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // 调用函数来获取在线玩家列表
+        getOnlinePlayers(serverIP);
+    </script>
+</body>
+</html>
