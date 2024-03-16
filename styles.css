@@ -1,0 +1,156 @@
+body {
+    background: rgb(60, 60, 60);
+    overflow-x: hidden;
+}
+
+.daohanglan {
+    background: rgb(60, 60, 60);
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    position: absolute;
+    left: 0%;
+    overflow: hidden;
+    z-index: 114514;
+}
+
+.daohanglan-logo {
+    width: auto;
+    max-height: 90%;
+    top: 10%;
+    overflow: hidden;
+    z-index: 114515;
+    position: absolute;
+}
+
+.daohanglan-button1 {
+    width: 10%;
+    height: 100%;
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 1.2em;
+    top: 0%;
+    left: 25%;
+    position: absolute;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    z-index: 114515;
+}
+
+.daohanglan-button1:hover {
+    background: rgb(75, 75, 75);
+}
+
+.daohanglan-button2 {
+    width: 10%;
+    height: 100%;
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 1.2em;
+    top: 0%;
+    left: 35%;
+    position: absolute;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    z-index: 114515;
+}
+
+.daohanglan-button2:hover {
+    background: rgb(75, 75, 75);
+}
+
+.index-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    filter: blur(2.5px);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.index-title {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-family: 'Minecraftcn';
+
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('minecraft.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Minecraftcn';
+    src: url(5_Minecraft\ AE\(支持中文\).ttf);
+}
+
+.typingtext {
+    opacity: 1;
+    animation: typeIn 0.5s steps(3) forwards;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 55%;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+    font-family: "Pixel";
+    font-weight: bold;
+    font-family: 'Minecraft';
+}
+
+.server-td {
+    max-width: 60%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 尝试将此值修改为合适的数值 */
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: white;
+}
+
+
+.server-td-1 {
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    background: rgb(60, 60, 60);
+    transition: hover 0.5s ease;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.server-td-1:hover {
+    background: rgb(75, 75, 75);
+}
+
+.ceshi {
+    top: 150%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 20%;
+    height: auto;
+    background: rgb(60, 60, 60);
+    transition: hover 0.5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
