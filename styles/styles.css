@@ -1,0 +1,659 @@
+﻿body {
+    background: url(../img/backgroud.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 175%;
+    overflow-x: hidden;
+}
+
+.daohanglan {
+    background: rgb(60, 60, 60);
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    position: fixed;
+    left: 0%;
+    overflow: hidden;
+    z-index: 114514;
+}
+
+.daohanglan-logo {
+    width: auto;
+    max-height: 90%;
+    top: 10%;
+    overflow: hidden;
+    z-index: 114515;
+    position: absolute;
+}
+
+.daohanglan-button1 {
+    width: 10%;
+    height: 100%;
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 1.2em;
+    top: 0%;
+    left: 25%;
+    position: absolute;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    z-index: 114515;
+}
+
+.daohanglan-button1:hover {
+    background: rgb(75, 75, 75);
+}
+
+.daohanglan-button2 {
+    width: 10%;
+    height: 100%;
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 1.2em;
+    top: 0%;
+    left: 35%;
+    position: absolute;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    z-index: 114515;
+}
+
+.daohanglan-button2:hover {
+    background: rgb(75, 75, 75);
+}
+
+.index-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    filter: blur(5px);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.index-title {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Minecraftcn';
+}
+
+@font-face {
+    font-family: 'Minecraftcn';
+    src: url(ttf/5_Minecraft_AE_支持中文.ttf);
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url(ttf/minecraft.ttf);
+}
+
+.typingtext {
+    opacity: 1;
+    animation: typeIn 0.5s steps(3) forwards;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 55%;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Minecraft';
+}
+
+.server-td {
+    max-width: 60%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 尝试将此值修改为合适的数值 */
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: white;
+}
+
+
+.server-td-1 {
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    background: rgb(60, 60, 60);
+    transition: hover 0.5s ease;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.server-td-1:hover {
+    background: rgb(75, 75, 75);
+}
+
+.ceshi {
+    top: 150%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 20%;
+    height: auto;
+    background: rgb(60, 60, 60);
+    transition: hover 0.5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.in-text {
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1.5em;
+    transition: color 0.5s ease;
+    font-family: 'Minecraftcn';
+    /* text-align: center; */
+    font-family: 'Minecraftcn';
+}
+
+.welcome-title {
+    text-align: center;
+}
+
+.title {
+    color: white;
+    z-index: 114516;
+    position: absolute;
+    font-family: Minecraftcn;
+    left: 200px;
+    height: 0%;
+    line-height: 0%;
+}
+
+.menu-text {
+    position: absolute;
+    height: 200%;
+    line-height: 200%;
+    font-size: Minecraftcn;
+    right: 5%;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: azure;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.Luniverse-block {
+    width: 60%;
+    text-align: left;
+}
+
+.Luniverse-img {
+    width: 30%;
+    height: auto;
+    right: 0%;
+    position: absolute;
+}
+
+.Luniverse-img-hide {
+    width: 30%;
+    height: auto;
+    right: 0%;
+    visibility: hidden;
+}
+
+.Server-block {
+    text-align: center;
+    font-family: Minecraftcn;
+    color: white;
+}
+
+.Server-img {
+    width: 40%;
+    height: auto;
+}
+
+.Server-title {
+    font-size: 200%;
+}
+
+.Server-title-IP {
+    font-family: Minecraft;
+    font-size: 200%;
+    transition: 0.5s ease;
+    color: white
+}
+
+.Server-title-IP:hover {
+    color: rgb(125, 125, 125);
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+}
+
+.Server-title-IP-sec {
+    font-family: Minecraft;
+    font-size: 100%;
+    transition: 0.5s ease;
+    color: rgb(125, 125, 125)
+}
+
+.Server-title-IP-sec:hover {
+    color: rgb(80, 80, 80);
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+}
+
+.Server-text {
+    font-family: Minecraftcn;
+}
+
+.Server-text-wf {
+    font-family: Minecraftcn;
+    font-size: 100%;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.Server-text-wf:hover {
+    color: rgb(125, 125, 125);
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+}
+
+.people-block {
+    font-family: Minecraftcn;
+    color: white;
+}
+
+.one_2e-block {
+    width: 75%;
+    text-align: right;
+}
+
+.one_2e-img {
+    width: 40%;
+    height: auto;
+    left: 0%;
+    position: absolute;
+}
+
+.one_2e-img-hide {
+    width: 25%;
+    height: auto;
+    left: 0%;
+    visibility: hidden;
+    text-align: right;
+}
+
+.Lunivers-tell {
+    font-size: 100%;
+    color: white;
+    font-family: Minecraftcn;
+    transition: 0.5s ease;
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+}
+
+.Lunivers-tell:hover {
+    color: rgb(125, 125, 125);
+}
+
+.FL-block {
+    width: 75%;
+    text-align: left;
+}
+
+.FL-img {
+    width: 40%;
+    height: auto;
+    right: 0%;
+    position: absolute;
+}
+
+.FL-img-hide {
+    width: 25%;
+    height: auto;
+    right: 0%;
+    visibility: hidden;
+    text-align: left;
+}
+
+.FL-tell {
+    font-size: 100%;
+    color: white;
+    font-family: Minecraftcn;
+    transition: 0.5s ease;
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+}
+
+.FL-tell:hover {
+    color: rgb(125, 125, 125);
+}
+
+.hao-block {
+    width: 75%;
+    text-align: right;
+}
+
+.Hao-img {
+    width: 35%;
+    height: auto;
+    left: 10%;
+    position: absolute;
+}
+
+.Hao-img-hide {
+    width: 25%;
+    height: auto;
+    left: 10%;
+    visibility: hidden;
+    text-align: right;
+}
+
+.otherpeople-block {
+    font-family: Minecraftcn;
+    color: white;
+    width: 75%;
+    background: rgba(60, 60, 60, 0.75);
+    /* 圆角 */
+    border-radius: 10px;
+    /* 居中 */
+    margin: 0 auto;
+    transition: 0.5s ease;
+}
+
+.otherpeople-block:hover {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+.otherpeople-title {
+    font-size: 200%;
+    text-align: center;
+    padding: 10px;
+    font-family: Minecraftcn;
+}
+
+.a-otherpeople-block {
+    width: 35%;
+    background-color: rgba(40, 40, 40, 0.75);
+    border-radius: 114514px;
+    display: block;
+    position: relative;
+    transition: all 0.25s;
+    left: 10%;
+    /* 将鼠标样式转换为点击模式 */
+    cursor: pointer;
+    /* order: 0; */
+    line-height: 100%;
+}
+
+.a-otherpeople-block:hover {
+    background: rgba(30, 30, 30, 0.9);
+    left: 5%;
+}
+
+.a-otherpeople-img {
+    border-radius: 50%;
+    height: auto;
+    width: 12.5%;
+    position: relative;
+}
+
+.a-otherpeople-text {
+    color: white;
+    padding: 0;
+    border-bottom: 50% solid transparent;
+}
+
+.a-otherpeople-about-block {
+    color: white;
+    position: absolute;
+    right: 20%;
+    width: 25%;
+    border-radius: 10px;
+    transition: all 0.25s;
+    background: rgba(40, 40, 40, 0.75);
+}
+
+.a-otherpeople-about-block:hover {
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+.game-block {
+    font-family: Minecraftcn;
+    color: white;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.game-title {
+    font-size: 200%;
+}
+
+.survival-block {
+    width: 90%;
+}
+
+.survival-img {
+    width: 75%;
+    height: auto;
+}
+
+.game-l-title {
+    font-size: 150%;
+}
+
+.slimefun-block {
+    width: 90%;
+}
+
+.slimefun-img {
+    width: 50%;
+    height: auto;
+}
+
+.minigame-title {
+    font-family: Minecraft;
+    font-size: 150%;
+}
+
+.Minigame-block {
+    width: 90%;
+}
+
+.Minigame-img {
+    width: 75%;
+    height: auto;
+}
+
+.Roguelike-block {
+    width: 90%;
+}
+
+.Roguelike-img {
+    width: 75%;
+    height: auto;
+}
+
+.Zombie-block {
+    width: 90%;
+}
+
+.Zombie-img {
+    width: 75%;
+    height: auto;
+}
+
+.pictureWall-block {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pictureWall-block img {
+    transition: 0.5s ease;
+}
+
+.pictureWall-block img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.pictureWall-1 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%
+}
+
+.pictureWall-2 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.pictureWall-3 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.pictureWall-4 {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+}
+
+.pictureWall-5 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.pictureWall-6 {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 65%;
+}
+
+.pictureWall-7 {
+    width: 48.5%;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.pictureWall-8 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+
+.pictureWall-9 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+}
+
+.pictureWall-10 {
+    width: 48.5%;
+    height: auto;
+    position: absolute;
+    top: 138%;
+    left: 50%;
+}
+
+.pictureWall-11 {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 17.5%;
+    left: 60%;
+}
+
+.pictureWall-12 {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 26.5%;
+    left: 88.5%;
+}
+
+.pictureWall-13 {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 17.5%;
+    left: 55%;
+}
+
+/* .pictureWall {
+    width: 10%;
+    height: ;
+    object-fit: cover
+} */
+
+/* about */
+.about {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    top: 5%;
+    color: white;
+    font-family: Minecraftcn;
+}
+
+.history {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    top: 50%;
+    color: white;
+    font-family: Minecraftcn;
+}
